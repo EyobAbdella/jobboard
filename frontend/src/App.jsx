@@ -7,6 +7,8 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Jobs from "./pages/Jobs";
 import Layout from "./Layout/Layout";
+import Companies from "./pages/Companies";
+import Employee from "./pages/Employee";
 
 const App = () => {
   return (
@@ -18,6 +20,8 @@ const App = () => {
         <Route path='google' element={<Google />} />
         <Route path='activate/:uid/:token' element={<Activate />} />
         <Route element={<Layout />}>
+          <Route path='companies' element={<Companies />} />
+          <Route path='employee' element={<Employee />} />
           <Route path='/' element={<Home />} />
           <Route path='/jobs' element={<Jobs />} />
         </Route>

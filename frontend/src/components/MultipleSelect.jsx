@@ -39,7 +39,7 @@ function getStyles(name, personName, theme) {
   };
 }
 
-export default function MultipleSelect() {
+export default function MultipleSelect(props) {
   const theme = useTheme();
   const [personName, setPersonName] = React.useState([]);
 
@@ -52,8 +52,8 @@ export default function MultipleSelect() {
 
   return (
     <div>
-      <FormControl sx={{ width: 300 }}>
-        <InputLabel id='demo-multiple-name-label'>Name</InputLabel>
+      <FormControl size={props.size} sx={{ width: props.width }}>
+        <InputLabel id='demo-multiple-name-label'>{props.title}</InputLabel>
         <Select
           labelId='demo-multiple-name-label'
           id='demo-multiple-name'
