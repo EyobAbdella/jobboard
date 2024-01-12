@@ -4,7 +4,9 @@ const Verify = () => {
   return (
     <div className='flex items-center h-screen'>
       <div className='flex flex-col items-center mx-auto max-w-md gap-4'>
-        <div className='absolute top-2 left-5'>Logo</div>
+        <Link to='/' className='absolute top-2 left-5'>
+          Logo
+        </Link>
         <h1 className='text-2xl font-semibold'>
           Verify your email to continue
         </h1>

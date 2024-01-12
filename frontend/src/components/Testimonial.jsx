@@ -27,8 +27,8 @@ const Testimonial = () => {
   }, []);
 
   return (
-    <div className='text-slate-50 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 py-14 sm:py-28 px-1 flex flex-col items-center h-full w-full'>
-      <h1 className='text-3xl mb-2 px-0.5 text-center'>
+    <div className='text-slate-50 bg-gradient-to-r lfrom-indigo-500 lvia-purple-500 lto-pink-500 bg-indigo-400 py-14 sm:py-28 px-1 flex flex-col items-center h-full w-full'>
+      <h1 className='text-4xl mb-2 px-0.5 text-center font-semibold text-zinc-900'>
         Positive Feedback From Satisfied Candidates
       </h1>
       <p className='text-lg px-0.5 text-center'>

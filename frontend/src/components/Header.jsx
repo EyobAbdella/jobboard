@@ -10,27 +10,30 @@ import {
   useMediaQuery,
   useTheme,
 } from "@mui/material";
-import AddBusinessRoundedIcon from "@mui/icons-material/AddBusinessRounded";
 import DrawerComp from "./Drawer";
 import ArrowForwardOutlinedIcon from "@mui/icons-material/ArrowForwardOutlined";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Header = () => {
   const navigate = useNavigate();
-  const [value, setValue] = useState(0);
+  const [value, setValue] = useState();
   const theme = useTheme();
   const isMatch = useMediaQuery(theme.breakpoints.down("md"));
-  const url = ["/", "/Companies", "/Jobs", "/Employee"];
+  const url = ["/Jobs", "/Companies", "/Employee"];
 
   return (
     <React.Fragment>
-      <AppBar sx={{ background: "#fff", color: "#000", boxShadow: "none" }}>
+      <AppBar
+        position='static'
+        sx={{ background: "#fff", color: "#000", boxShadow: "none" }}>
         <Toolbar>
           {isMatch ? (
             <>
-              <Typography sx={{ fontSize: "2rem", paddingLeft: "10%" }}>
-                Logo
-              </Typography>
+              <Link to='/'>
+                <Typography sx={{ fontSize: "2rem", paddingLeft: "10%" }}>
+                  Logo
+                </Typography>
+              </Link>
               <DrawerComp />
               <button
                 onClick={() => navigate("signup")}
@@ -40,7 +43,11 @@ const Header = () => {
             </>
           ) : (
             <>
-              <h1 className='text-2xl'>Logo</h1>
+              <Link to='/'>
+                <Typography sx={{ fontSize: "2rem", paddingLeft: "10%" }}>
+                  Logo
+                </Typography>
+              </Link>
               <Tabs
                 sx={{ marginLeft: "auto" }}
                 indicatorColor='secondary'
@@ -50,10 +57,11 @@ const Header = () => {
                   setValue(value);
                   navigate(url[value]);
                 }}>
-                <Tab label='Home' />
-                <Tab label='Companies' />
                 <Tab label='Jobs' />
+                <Tab label='Companies' />
                 <Tab label='Employee' />
+                <Tab label='Resume Builder' />
+                <Tab label='Reporter Jobs' />
               </Tabs>
               <button
                 onClick={() => navigate("signup")}

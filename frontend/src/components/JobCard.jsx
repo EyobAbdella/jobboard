@@ -8,17 +8,22 @@ const JobCard = () => {
     <div className='w-full border border-gray-50 px-3 py-6 sm:py-10 my-2 cursor-pointer rounded hover:ring-1 hover:ring-indigo-300 duration-500 space-y-6'>
       <div className='flex items-start gap-5'>
         <img
-          className='border border-indigo-200 rounded p-1 h-20 w-24'
+          className='border border-indigo-200 rounded-full p-1 h-24 w-24'
           src={Logo}
           alt=''
         />
-        <div className=''>
+        <div className='space-y-2 max-w-[750px]'>
           <h1 className=' w-fit text-lg sm:text-[1.6rem] text-indigo-950 hover:text-indigo-800'>
             Web Designer / Developer
           </h1>
-          <div className='grid grid-cols-2 md:grid-cols-4 gap-x-6 lg:gap-x-3 xl:gap-x-10 gap-y-2 text-sm mt-2 font-sans text-slate-400'>
+          <p className=''>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+            reiciendis illum tenetur quo sequi aliquam eos, nesciunt adipisci
+            eligendi laudantium.
+          </p>
+          <div className='grid grid-cols-2 md:grid-cols-4 gap-x-6 lg:gap-x-3 xl:gap-x-10 gap-y-2 text-sm mt-2 font-sans text-slate-500'>
             <p>MicroSoft</p>
-            <div className='flex'>
+            <div className='flex gap-x-0.5'>
               <LocationOnOutlinedIcon fontSize='small' />
               <p>Addis Ababa</p>
             </div>

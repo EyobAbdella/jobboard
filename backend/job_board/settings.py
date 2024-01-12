@@ -174,12 +174,12 @@ DJOSER = {
     },
 }
 
-EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-EMAIL_HOST = "smtp.gmail.com"
-EMAIL_PORT = 587
-EMAIL_HOST_USER = "eyobm8673@gmail.com"
-EMAIL_HOST_PASSWORD = "jxfp xajc mzhj fnoj"
-EMAIL_USE_TLS = True
+# EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+# EMAIL_HOST = "smtp.gmail.com"
+# EMAIL_PORT = 587
+# EMAIL_HOST_USER = "eyobm8673@gmail.com"
+# EMAIL_HOST_PASSWORD = "jxfp xajc mzhj fnoj"
+# EMAIL_USE_TLS = True
 
 AUTHENTICATION_BACKENDS = (
     "social_core.backends.google.GoogleOAuth2",

@@ -10,8 +10,15 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import { useNavigate } from "react-router-dom";
 const DrawerComp = () => {
-  const pages = ["Home", "Companies", "Jobs", "Employee"];
-  const url = ["/", "/Companies", "/Jobs", "/Employee"];
+  const pages = [
+    "Jobs",
+    "Companies",
+    "Employee",
+    "About Us",
+    "Resume Builder",
+    "Reporter Jobs",
+  ];
+  const url = ["/Jobs", "/Companies", "/Employee"];
   const navigate = useNavigate();
   const [openDrawer, setOpenDrawer] = useState(false);
 
