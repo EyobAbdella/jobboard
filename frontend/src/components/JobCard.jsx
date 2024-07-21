@@ -16,12 +16,12 @@ const JobCard = () => {
           <h1 className=' w-fit text-lg sm:text-[1.6rem] text-indigo-950 hover:text-indigo-800'>
             Web Designer / Developer
           </h1>
-          <p className=''>
+          <p className='max-w-xl'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
             reiciendis illum tenetur quo sequi aliquam eos, nesciunt adipisci
             eligendi laudantium.
           </p>
-          <div className='grid grid-cols-2 md:grid-cols-4 gap-x-6 lg:gap-x-3 xl:gap-x-10 gap-y-2 text-sm mt-2 font-sans text-slate-500'>
+          <div className='grid grid-cols-2 md:grid-cols-4 gap-x-6 lg:gap-x-3 xl:gap-x-10 gap-y-2 text-sm mt-3 font-sans text-slate-500 font-semibold'>
             <p>MicroSoft</p>
             <div className='flex gap-x-0.5'>
               <LocationOnOutlinedIcon fontSize='small' />
@@ -34,8 +34,8 @@ const JobCard = () => {
             <p>$3500-$4000</p>
           </div>
         </div>
-        <div className='hidden sm:block ml-auto text-center space-y-2'>
-          <button className='rounded-md py-2.5 px-7 hover:border hover:border-indigo-400 bg-indigo-400 hover:bg-white hover:text-indigo-500 duration-500 text-white'>
+        <div className='hidden sm:block ml-auto text-center space-y-2 w-60'>
+          <button className='rounded-md py-2.5 px-7 hover:border-2 hover:border-indigo-400 bg-indigo-400 hover:bg-white hover:text-indigo-500 duration-500 text-white'>
             Apply Now
           </button>
           <p className='text-sm italic text-gray-600 font-thin'>

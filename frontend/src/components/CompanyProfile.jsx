@@ -12,10 +12,17 @@ const CompanyProfile = () => {
   ];
   const size = ["size", "1-10", "11-20", "21-40"];
   return (
-    <div className='lg:px-20 md:px-10 mb-auto mt-10 w-full space-y-6 overflow-y-scroll h-full'>
+    <div className='lg:px-16 md:px-10 mb-auto mt-10 w-full space-y-6 overflow-y-scroll h-full'>
       <h1 className='text-3xl font-[500]'>Company Profile</h1>
-      <div className='border border-gray-300 rounded-md py-5 w-full'>
-        <p className='text-xl font-[500] px-5 border-b border-gray-300 py-3'>
+      <div className='space-x-1.5 font-[500] text-gray-500'>
+        <span>Job Board</span>
+        <span>/</span>
+        <span>DashBoard</span>
+        <span>/</span>
+        <span className='text-indigo-400 cursor-pointer'>Company Profile</span>
+      </div>
+      <div className='border border-gray-200 rounded-xl pb-5 w-full'>
+        <p className='text-xl font-[500] px-5 bg-gray-100 border-b border-gray-200 py-5'>
           Profile
         </p>
 
@@ -25,10 +32,10 @@ const CompanyProfile = () => {
               <label
                 htmlFor='company-logo'
                 className='flex justify-between w-full items-center '>
-                <p className='pl-2 border-y border-l w-full border-gray-300 rounded-l-lg py-3.5'>
+                <p className='pl-2 border-y border-l w-full border-gray-200 rounded-l-lg py-3.5'>
                   Choose Image
                 </p>
-                <span className='border-y border-x border-gray-300 rounded-r-lg pr-2 pl-5 bg-gray-200 py-3.5 '>
+                <span className='border-y border-x border-gray-200 rounded-r-lg pr-2 pl-5 bg-gray-200 py-3.5 '>
                   Browser
                 </span>
               </label>
@@ -60,7 +67,7 @@ const CompanyProfile = () => {
         </Box>
       </div>
 
-      <div className='border border-gray-300 rounded-lg p-8'>
+      <div className='border border-gray-200 rounded-lg p-8'>
         <p className='mb-6 text-xl font-[500] text-gray-900'>
           About The Company
         </p>
